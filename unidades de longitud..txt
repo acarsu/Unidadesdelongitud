@@ -1,0 +1,28 @@
+/* Conversion de unidades de longitud
+ *Escriba un programa que convierta de centimetros a pulgadas. una pulgada
+*es igual a 2.54 centrimetros.
+ */
+package unidadesdelongitud;
+
+import java.util.Scanner;
+
+public class unidadesdelongitud {
+
+   
+    public static void main(String[] args) {
+        Scanner entrada = new Scanner(System.in);
+        
+        double centimetros = 0.01;
+        double pulgadas = 2.54;
+        double resultado = 0;
+        
+        System.out.println("Escribe tu numero en centimetros: ");
+        centimetros = entrada.nextDouble();
+        
+        resultado = centimetros / pulgadas;
+        System.out.println("EL resultado es: "+ resultado);
+        
+        
+    }
+    
+}
